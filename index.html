@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dilse Girlfriend ❤️</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#170d20;color:white;font-family:Arial}
+header{padding:20px;background:#291638;display:flex;gap:12px;align-items:center}
+.avatar{font-size:30px;background:#753ba0;padding:12px;border-radius:50%}
+.status{color:#8affae;font-size:12px}
+main{padding:18px 15px 90px}
+.welcome{text-align:center;padding:25px 0}
+.welcome h2{color:#e7aaff}
+.msg{padding:14px;margin:12px 0;max-width:85%;border-radius:17px;background:#382544;line-height:1.5}
+.user{margin-left:auto;background:#923fc1}
+form{position:fixed;bottom:0;left:0;right:0;display:flex;gap:8px;padding:12px;background:#291638}
+input{flex:1;min-width:0;padding:14px;border:0;border-radius:25px;font-size:15px}
+button{border:0;border-radius:50%;width:45px;background:#d18aff;font-size:20px}
+</style>
+</head>
+<body>
+<header>
+<div class="avatar">💜</div>
+<div>
+<h3>Dilse Girlfriend ❤️</h3>
+<div class="status">● Online · AI Companion</div>
+</div>
+</header>
+<main>
+<div class="welcome">
+<h2>Welcome to Dilse ❤️</h2>
+<p>दिल से बातें करो, बिना झिझक!</p>
+</div>
+<div id="chat">
+<div class="msg">हाय जान! ❤️ आज तुम्हारा दिन कैसा रहा?</div>
+</div>
+</main>
+<form id="form">
+<input id="message" placeholder="कुछ कहो जान...">
+<button>➤</button>
+</form>
+<script>
+const form=document.getElementById('form');
+const input=document.getElementById('message');
+const chat=document.getElementById('chat');
+form.onsubmit=e=>{
+e.preventDefault();
+let v=input.value.trim();
+if(!v)return;
+let u=document.createElement('div');
+u.className='msg user';
+u.textContent=v;
+chat.appendChild(u);
+input.value='';
+let b=document.createElement('div');
+b.className='msg';
+b.textContent='तुम्हारी बात सुनकर अच्छा लगा ❤️ तुम्हारा दिन और बताओ!';
+chat.appendChild(b);
+window.scrollTo(0,document.body.scrollHeight);
+};
+</script>
+</body>
+</html>
